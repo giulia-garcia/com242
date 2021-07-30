@@ -1,0 +1,47 @@
+:root {
+    --color-text: hsla(235, 13%, 17%, 0.8);
+    --color-text-light: hsla(235, 13%, 17%, 0.6);
+    --color-text-lighter: hsla(235, 13%, 17%, 0.2);
+    --color-input-background: #EAEAEE;
+    --color-input-disabled: #d5d5d8;
+    --color-white: #F8F9FA;
+    --color-dark-blue: #00aeff;
+    --color-darker-blue: #0073ff;
+    --color-light-blue: #00c6ff;
+    --color-lighter-blue: #39d4ff;
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100vh;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /* 1rem == 10px */
+    }
+}
+
+/* ---------------------------------------------- */
+
+#page-body{
+    background-color: var(--color-lighter-blue);
+    display: flex;
+}
+
+.basic-font {
+    font: 400 1.6rem Inter;
+    color: var(--color-text);
+}
+
+.title-font h1{
+    font: 500 3.2rem Roboto Slab;
+    color: var(--color-text);
+}

@@ -1,0 +1,157 @@
+#page-body .register-container {
+    margin: auto;
+    border: 1px solid var(--color-lighter-blue);
+    box-shadow: 10px 10px 5px var(--color-text-lighter);
+    width: 40vw;
+    background-color: var(--color-white);
+    padding: 6.4rem;
+    border-radius: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #page-body .register-container {
+        width: 90vw;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #page-body .register-container {
+        width: 60vw;
+    }
+  }
+
+#page-body .register-container legend {
+    font: 700 4.8rem Roboto Slab;
+    color: var(--color-text);
+    margin-bottom: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.6rem;
+    border-bottom: 0.8px solid var(--color-text-lighter);
+}
+
+#page-body .register-container .text {
+    width: 100%;
+    margin: 1.6rem 0;
+    font: 400 2.2rem Inter;
+    color: var(--color-text);
+}
+
+.radio-buttons {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 2.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-buttons input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+.radio-buttons:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.radio-buttons input:checked ~ .checkmark {
+    background-color: var(--color-dark-blue);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.radio-buttons input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.radio-buttons .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+}
+
+#page-body .register-container .input-block input {
+    width: 100%;
+    height: 6.4rem;
+    margin-top: 1.2rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-white);
+    outline: 0;
+    padding: 0 1.8rem;
+    font: 400 2.2rem Inter;
+}
+
+#page-body .register-container .input-block {
+    position: relative;
+}
+
+#page-body .register-container .input-block:focus-within::after {
+    content: "";
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: var(--color-dark-blue);
+    position: absolute;
+    left: 1.6rem;
+    bottom: 0px;
+}
+
+#page-body .register-container button {
+    background-image: linear-gradient(to right, #00aeff 0%, #0073ff  51%, #00aeff  100%);
+    width: 100%;
+    height: 6.4rem;
+    margin-top: 2.4rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    border: 1px solid var(--color-white);
+    outline: 0;
+    padding: 0 1.8rem;
+    font: 500 2.4rem Roboto Slab;
+}
+
+#page-body .register-container button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#page-body .already-user {
+    margin-top: 2.4rem;
+    font: 400 1.8rem Inter;
+    float: right;
+}
+
+#page-body .already-user a {
+    color: var(-color-darker-blue);
+    text-decoration: none;
+    
+}

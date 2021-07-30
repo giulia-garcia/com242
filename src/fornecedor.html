@@ -1,0 +1,135 @@
+<html lang="en">
+    <head>
+        <title>Home - Fornecedor</title>
+        <meta charset="UTF-8">
+
+        <link rel="icon" href="/images/favicon.jpg"/>
+
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- css - fontes -->
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/fornecedor.css">
+        <script src="/functions.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body id="home-body">
+        <header class="page-header">
+            <nav class="home-navbar">
+                <img src="/images/favicon.jpg" alt="">
+                <b>Bem vindo(a) (Nome)</b>
+                <a href="/src/login.html">
+                    <button class="logout" type="button">Sair</button>
+                </a>
+            </nav>
+
+            <div class="header-content">
+                <a href="/src/register/voo.html">
+                    <button class="btn-register" type="button">Voo</button>
+                </a>
+                <a href="/src/register/hospedagem.html">
+                    <button class="btn-register" type="button">Hospedagem</button>
+                </a>
+                <a href="/src/register/passeio.html">
+                    <button class="btn-register" type="button">Passeio</button>
+                </a>
+                <a href="/src/register/veiculo.html">
+                    <button class="btn-register" type="button">Veículo</button>
+                </a>
+            </div>
+        </header>
+        
+        <!-- mesma coisa do outro, mas mostrando os cadastros do fornecedor -->
+        <div class="register-text">
+            <legend>Seus cadastros</legend>
+        </div>
+
+        <div id="container">
+            <legend>Passagens aéreas</legend>
+            <div class="cards">
+                <article class="card-item" data-space-name="">
+                    <header>
+                        <h1>Companhia aérea</h1>
+                    </header>
+
+                    <div class="card-info">
+                        <i class="glyphicon glyphicon-plane"></i>Local de saída: <br>
+                        <i class="glyphicon glyphicon-plane"></i>Local de chegada: <br>
+                        <i class="glyphicon glyphicon-time"></i>Horário de saída:<br>
+                        <i class="glyphicon glyphicon-time"></i>Horário de chegada: <br>
+                        <div class="card-info-footer">
+                            <span><i class="glyphicon glyphicon-usd"></i>Valor</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <legend>Hospedagens</legend>
+            <div class="cards">
+                <article class="card-item" data-space-name="">
+                    <header>
+                        <h1>Nome</h1>
+                        <h4>Descrição</h4>
+                    </header>
+
+                    <div class="card-info">
+                        <i class="glyphicon glyphicon-tags"></i>Categoria: <br>
+                        <i class="glyphicon glyphicon-map-marker"></i>Cidade: <br>
+                        <i class="glyphicon glyphicon-map-marker"></i>Endereço: <br>
+                        <div class="card-info-footer">
+                            <span><i class="glyphicon glyphicon-usd"></i>Valor</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <legend>Passeios</legend>
+            <div class="cards">
+                <article class="card-item" data-space-name="">
+                    <header>
+                        <h1>Nome</h1>
+                        <h4>Descrição</h4>
+                    </header>
+
+                    <div class="card-info">
+                        <i class="glyphicon glyphicon-tags"></i>Categoria: <br>
+                        <i class="glyphicon glyphicon-map-marker"></i>Cidade: <br>
+                        <i class="glyphicon glyphicon-map-marker"></i>Endereço: <br>
+                        <i class="glyphicon glyphicon-time"></i>Horário de início: <br>
+                        <i class="glyphicon glyphicon-time"></i>Horário de fim: <br>
+                        <div class="card-info-footer">
+                            <span><i class="glyphicon glyphicon-usd"></i>Valor</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <legend>Veículos</legend>
+            <div class="cards">
+                <article class="card-item" data-space-name="">
+                    <header>
+                        <h1>Nome</h1>
+                    </header>
+
+                    <div class="card-info">
+                        <i class="glyphicon glyphicon-tags"></i>Marca: <br>
+                        <i class="glyphicon glyphicon-info-sign"></i>Quantidade de portas: <br>
+                        <i class="glyphicon glyphicon-map-marker"></i>Cidade: <br>
+                        <div class="card-info-footer">
+                            <span><i class="glyphicon glyphicon-usd"></i>Valor</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </body>
+</html>
